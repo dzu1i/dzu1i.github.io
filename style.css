@@ -1,3 +1,72 @@
 * {
-  font-family: Helvetica;
+    font-family: Helvetica;
+  }
+
+html {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+img {
+    width: 200px;
+}
+
+#title {
+    text-align: center;
+    background-color: white;
+}
+
+
+/*from chatgtp*/
+.Epipremnum {
+    display: flex;
+    justify-content: space-between;
+}
+
+.e_element {
+    text-align: center;
+    width: 23%; /* Adjust as needed */
+}
+
+.e_element img {
+    width: 300px; /* Adjust image size as needed */
+    height: 300px; /* Adjust image size as needed */
+    border-radius: 0%; /* Makes the image round */
+    margin-bottom: 5px; /* Space between image and name */
+}
+
+.monstera {
+    display: flex;
+    justify-content: flex-start; /* Aligns elements to the right */
+}
+
+.m_element {
+    text-align: center;
+    width: 23%; /* Adjust as needed */
+    margin-left: 0px; /* Adjust space between elements */
+}
+
+.m_element img {
+    width: 300px; /* Adjust image size as needed */
+    height: 300px; /* Adjust image size as needed */
+    border-radius: 0%; /* Makes the image round */
+    margin-bottom: 5px; /* Space between image and name */
+}
+
+.sygonium {
+    display: flex;
+    justify-content: flex-start; /* Aligns elements to the right */
+}
+
+.s_element {
+    text-align: center;
+    width: 23%; /* Adjust as needed */
+    margin-left: 0px; /* Adjust space between elements */
+}
+
+.s_element img {
+    width: 300px; /* Adjust image size as needed */
+    height: 300px; /* Adjust image size as needed */
+    border-radius: 0%; /* Makes the image round */
+    margin-bottom: 5px; /* Space between image and name */
 }
