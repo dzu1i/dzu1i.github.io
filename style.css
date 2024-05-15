@@ -1,72 +1,106 @@
+/* Remove global margin setting */
 * {
-    font-family: Helvetica;
-  }
+    box-sizing: border-box;
+}
 
-html {
-    margin-left: 20%;
-    margin-right: 20%;
+.body_margin {
+    margin-left:15%;
+    margin-right: 15% ;
+}
+
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: black;
 }
 
 img {
-    width: 200px;
+    max-width: 100%; /* Ensure images fit inside their containers */
+    height: auto; /* Maintain aspect ratio */
 }
 
 #title {
     text-align: center;
     background-color: white;
+    margin: 20px auto; /* Center the title and add space above and below */
 }
 
-
-/*from chatgtp*/
-.Epipremnum {
-    display: flex;
-    justify-content: space-between;
-}
-
-.e_element {
+nav {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    font: 120% system-ui;
     text-align: center;
-    width: 23%; /* Adjust as needed */
+    padding: 2rem 1rem;
 }
 
-.e_element img {
-    width: 300px; /* Adjust image size as needed */
-    height: 300px; /* Adjust image size as needed */
-    border-radius: 0%; /* Makes the image round */
-    margin-bottom: 5px; /* Space between image and name */
+a {
+    color: #11823b;
+    text-decoration:none;
+    font-weight: bold;
+}
+  
+a:hover {
+    font-weight: 900;
+    color: #02231c;
 }
 
-.monstera {
-    display: flex;
-    justify-content: flex-start; /* Aligns elements to the right */
+a:active {
+    color: #02231c;
+    font-weight: 900;
 }
 
-.m_element {
+.topnav {
     text-align: center;
-    width: 23%; /* Adjust as needed */
-    margin-left: 0px; /* Adjust space between elements */
+    margin-bottom: 20px; /* Add space below the navigation */
 }
 
-.m_element img {
-    width: 300px; /* Adjust image size as needed */
-    height: 300px; /* Adjust image size as needed */
-    border-radius: 0%; /* Makes the image round */
-    margin-bottom: 5px; /* Space between image and name */
-}
-
-.sygonium {
+/* Adjustments for plant sections */
+.Epipremnum, .monstera, .syngonium {
     display: flex;
-    justify-content: flex-start; /* Aligns elements to the right */
+    justify-content: flex-start; /* Align elements to the left */
+    flex-wrap: wrap; /* Allow elements to wrap to next line */
+    gap: 2%; /* Adjust space between elements */
 }
 
-.s_element {
+.e_element, .m_element, .s_element {
     text-align: center;
-    width: 23%; /* Adjust as needed */
-    margin-left: 0px; /* Adjust space between elements */
+    flex: 1 1 30%; /* Adjust width of each element */
+    max-width: calc(30% - 2%); /* Adjust maximum width accounting for gap */
+    margin-bottom: 20px; /* Add space below each element */
 }
 
-.s_element img {
-    width: 300px; /* Adjust image size as needed */
-    height: 300px; /* Adjust image size as needed */
-    border-radius: 0%; /* Makes the image round */
-    margin-bottom: 5px; /* Space between image and name */
+.e_element img, .m_element img, .s_element img {
+    width: 100%; /* Ensure images fill their containers */
+    border-radius: 5px; /* Add slight border-radius */
 }
+
+#empty_space {
+    height: 50px;
+}
+
+
+/*title of the page*/
+#white_title {
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+#banner {
+    background-image: url('../PlantWeb/banner_dark.jpg');
+    background-size: cover;
+    height: 150px;
+  }
+  
+  #banner .content h1 {
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+  }
