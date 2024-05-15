@@ -94,7 +94,7 @@ a:active {
   }
 
 #banner {
-    background-image: url('../main/banner_dark.jpg');
+    background-image: url('./banner_dark.jpg');
     background-size: cover;
     height: 150px;
   }
