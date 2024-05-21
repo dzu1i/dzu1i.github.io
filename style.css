@@ -10,7 +10,7 @@
 
 body {
     background-color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -24,11 +24,6 @@ img {
     height: auto; /* Maintain aspect ratio */
 }
 
-#title {
-    text-align: center;
-    background-color: white;
-    margin: 20px auto; /* Center the title and add space above and below */
-}
 
 nav {
     display: grid;
@@ -60,7 +55,60 @@ a:active {
     margin-bottom: 20px; /* Add space below the navigation */
 }
 
+.pagenav {
+    list-style-type: none;
+    margin: 2%;
+    padding: 2%;
+    position: fixed;
+    top: 300px;
+    right: 15%;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #84bf68;
+    border-radius: 5%;
+}
+
+.pagenav li {
+    margin-bottom: 10px; /* Adjust spacing between list items */
+  }
+
+.pagenav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.pagenav a:hover {
+    font-weight: bold;
+    color: #02231c;
+}
+  
+.pagenav a:active {
+    color: #02231c;
+    font-weight: bold;
+}
+
+.body_nav_margin {
+    float: left;
+    width: 80%;
+    padding: 20px;
+}
+
+#small_gap {
+    height: 5px;
+}
+
+
+
 /* Adjustments for plant sections */
+
+.centered {
+    display: flex;
+    justify-content: center; /* Align elements to the left */
+    flex-wrap: wrap; /* Allow elements to wrap to next line */
+    gap: 2%;
+}
+
 .Epipremnum, .monstera, .syngonium {
     display: flex;
     justify-content: flex-start; /* Align elements to the left */
@@ -80,10 +128,9 @@ a:active {
     border-radius: 5px; /* Add slight border-radius */
 }
 
-#empty_space {
-    height: 50px;
+#banner_space {
+    height: 180px;
 }
-
 
 /*title of the page*/
 #white_title {
@@ -91,16 +138,64 @@ a:active {
     font-size: 42px;
     font-weight: 600;
     text-align: center;
+    font-family: serif, Arial, Helvetica;
   }
 
-#banner {
-    background-image: url('./banner_dark.jpg');
+#index_banner {
+    background-image: url('./img/index_banner.jpg');
     background-size: cover;
     height: 150px;
+    position: absolute;
+    left: 0; /* Extend 15% to the left */
+    right: 0; /* Extend 15% to the right */
+    z-index: -1; /* Ensure the banner is behind other content */
+  }
+
+#syn_banner {
+    background-image: url('./img/syn_banner.webp');
+    background-size: cover;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+#mon_banner {
+    background-image: url('./img/mon_banner.jpg');
+    background-size: cover;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
   }
   
-  #banner .content h1 {
+#epi_banner {
+    background-image: url('./img/epi_banner01.webp');
+    background-size: cover;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+#epi_banner .content h1, #index_banner .content h1, #syn_banner .content h1, #mon_banner .content h1 {
     position: relative;
     top: 50px;
     margin: 0 auto;
+    text-align: center;
+  }
+
+
+
+
+  .stanoviste, .substrat, .zalivka {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: normal;
+  }
+
+  .substrat img {
+    height: 450px;
   }
